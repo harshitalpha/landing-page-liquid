@@ -45,7 +45,9 @@ const Navbar = () => {
                         <li><a href="#features" onClick={(e) => handleNavClick(e, '#features')}>Features</a></li>
                         <li><a href="#how-it-works" onClick={(e) => handleNavClick(e, '#how-it-works')}>How It Works</a></li>
                         <li><a href="#use-cases" onClick={(e) => handleNavClick(e, '#use-cases')}>Use Cases</a></li>
-                        <li><a href="#waitlist" onClick={(e) => handleNavClick(e, '#waitlist')} className="btn-primary">Get Started</a></li>
+                        <li>
+                            <a href="#waitlist" onClick={(e) => handleNavClick(e, '#waitlist')} className="btn-primary">Join Waitlist</a>
+                        </li>
                     </ul>
                     <button 
                         className={`mobile-menu-toggle ${mobileMenuOpen ? 'active' : ''}`}

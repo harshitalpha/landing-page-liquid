@@ -56,10 +56,13 @@ const DashboardManagement = () => {
                         <p className="dashboard-subtitle">
                             Control all aspects of your AI agents, analytics, users, and settings from a single, intuitive interface. No switching between tools—everything you need is right here.
                         </p>
-                        <a href="#waitlist" className="dashboard-cta-button">
-                            Get Started
-                            <ArrowRight size={18} />
-                        </a>
+                        <div className="dashboard-cta-actions">
+                            <span className="dashboard-coming-soon">Coming Soon</span>
+                            <a href="#waitlist" className="dashboard-cta-button">
+                                Join Waitlist
+                                <ArrowRight size={18} />
+                            </a>
+                        </div>
                     </div>
                     
                     <div className="dashboard-features-grid">

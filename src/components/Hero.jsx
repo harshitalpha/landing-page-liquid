@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Brain, MessageCircle, TrendingUp, Code, Zap, Terminal, Sparkles, Layout, Rocket } from 'lucide-react'
+import { Brain, MessageCircle, TrendingUp, Code, Zap, Terminal, Sparkles, Layout, Rocket, ArrowRight } from 'lucide-react'
 import './Hero.css'
 
 const Hero = () => {
@@ -37,9 +37,13 @@ const Hero = () => {
                             automated learning, and powerful observability. No code required.
                         </p>
                         <div className="hero-cta">
-                            <a href="#waitlist" className="btn-primary btn-large">
-                                Get Started
-                            </a>
+                            <div className="hero-cta-primary">
+                                <span className="hero-coming-soon">Coming Soon</span>
+                                <a href="#waitlist" className="btn-primary btn-large">
+                                    Join Waitlist
+                                    <ArrowRight size={18} />
+                                </a>
+                            </div>
                             <a href="#features" className="btn-secondary btn-large">
                                 Learn More
                             </a>
