@@ -1,0 +1,123 @@
+.how-it-works {
+    padding: 8rem 0;
+    background: linear-gradient(180deg, rgba(10, 10, 15, 0.5) 0%, var(--bg-primary) 100%);
+}
+
+.how-it-works-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    opacity: 0;
+}
+
+.step.fade-in {
+    animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    min-width: 80px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+    padding-top: 0.5rem;
+}
+
+.step-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.step-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.step-connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    margin-left: 40px;
+}
+
+.connector-line {
+    width: 2px;
+    height: 40px;
+    background: linear-gradient(180deg, var(--accent-primary) 0%, transparent 100%);
+}
+
+.connector-arrow {
+    color: var(--accent-primary);
+    font-size: 1.5rem;
+    margin-top: -10px;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .how-it-works {
+        padding: 4rem 0;
+    }
+
+    .steps-container {
+        gap: 1.5rem;
+    }
+
+    .step {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .step-number {
+        min-width: auto;
+        font-size: 2.5rem;
+    }
+
+    .step-connector {
+        margin-left: 0;
+        margin: 0.5rem 0;
+    }
+
+    .step-title {
+        font-size: 1.5rem;
+    }
+
+    .step-description {
+        font-size: 1rem;
+    }
+}
