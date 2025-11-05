@@ -46,8 +46,8 @@ const Features = () => {
         },
         {
             Icon: Database,
-            title: 'Human-Like Memory System',
-            description: 'Persistent conversation memory that learns patterns, preserves context, and improves over time.',
+            title: 'Persistent Memory System',
+            description: 'Maintain conversation context across sessions with intelligent memory storage that preserves important information and patterns.',
             highlights: [
                 'Conversation history',
                 'Pattern recognition',
@@ -76,8 +76,8 @@ const Features = () => {
         },
         {
             Icon: Eye,
-            title: 'Complete Observability',
-            description: 'Comprehensive analytics, monitoring, and debugging tools to understand every interaction.',
+            title: 'Analytics & Monitoring',
+            description: 'Track performance, monitor interactions, and debug issues with powerful analytics and real-time insights.',
             highlights: [
                 'Performance analytics',
                 'Real-time monitoring',
