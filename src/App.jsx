@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import DashboardManagement from './components/DashboardManagement'
 import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import UseCases from './components/UseCases'
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <DashboardManagement />
       <Features />
       <HowItWorks />
       <UseCases />
